@@ -9,6 +9,8 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+require __DIR__.'/auth.php';
+
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 
