@@ -18,4 +18,4 @@ Route::middleware('auth')->group(function () {
 });
 Route::get('/{shortCode}', [ShortenUrlController::class, 'redirectToOriginal'])->name('shortened.redirect');
 
-require __DIR__.'/auth.php';
+
