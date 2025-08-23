@@ -13,6 +13,8 @@ require __DIR__.'/auth.php';
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+    Route::get('/dashboard/users-list', [DashboardController::class, 'userslist'])->name('users.list');
+    Route::put('/dashboard/user/{id}', [DashboardController::class, 'updateuser']);
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
