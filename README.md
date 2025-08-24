@@ -61,7 +61,7 @@ Success Response:
 {
   "message": "Successfully URL shortened!",
   "original_url": "https://example.com",
-  "short_url":  "http://localhost:8000/api/redirect/abc123"
+  "short_url": "http://localhost:8000/api/redirect/abc123"
 }
 
 2. Redirect
